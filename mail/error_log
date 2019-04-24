@@ -1,0 +1,18 @@
+[12-Apr-2019 14:56:26 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/eloanathomecom/public_html/amp/form.php on line 6
+[12-Apr-2019 14:56:29 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/eloanathomecom/public_html/amp/form.php on line 6
+[12-Apr-2019 16:18:14 UTC] PHP Warning:  require_once(PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /home/eloanathomecom/public_html/amp/form.php on line 35
+[12-Apr-2019 16:18:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'PHPMailer/PHPMailerAutoload.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/eloanathomecom/public_html/amp/form.php on line 35
+[12-Apr-2019 17:59:39 UTC] PHP Warning:  include(PHPMailer-master/PHPMailerAutoload.php): failed to open stream: No such file or directory in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 17:59:39 UTC] PHP Warning:  include(): Failed opening 'PHPMailer-master/PHPMailerAutoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 17:59:39 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/eloanathomecom/public_html/amp/envia.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/eloanathomecom/public_html/amp/envia.php on line 12
+[12-Apr-2019 18:01:00 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 18:01:05 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 18:02:58 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 18:02:59 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[12-Apr-2019 18:04:12 UTC] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/eloanathomecom/public_html/amp/envia.php on line 9
+[22-Apr-2019 13:14:43 UTC] PHP Parse error:  syntax error, unexpected 'SuaSenha123' (T_STRING) in /home/eloanathomecom/public_html/amp/mail/envia.php on line 31
+[22-Apr-2019 13:16:33 UTC] PHP Parse error:  syntax error, unexpected 'Agencia321' (T_STRING) in /home/eloanathomecom/public_html/amp/mail/envia.php on line 31
+[22-Apr-2019 13:16:59 UTC] PHP Parse error:  syntax error, unexpected 'Agencia321' (T_STRING) in /home/eloanathomecom/public_html/amp/mail/envia.php on line 31
