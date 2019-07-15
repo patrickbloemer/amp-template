@@ -3,20 +3,7 @@
 
 $nome = $_GET['nome'];
 $email = $_GET['email'];
-$telefone = $_GET['telefone'];
 $assunto = $_GET['assunto'];
-$lista_servicos = $_GET['servico'];
-// Preenche variável com todos os serviços selecionados
-$servicos = "";
-foreach ($lista_servicos as $servico){ 
-  if($servicos == ""){
-    $servicos = $servico;
-  }else{
-    $servicos = $servicos.", ".$servico;
-  }
-}
-$data = $_GET['data'];
-$horario = $_GET['horario'];
 $mensagem = $_GET['mensagem'];
 
 // Inclui o arquivo class.phpmailer.php localizado na mesma pasta do arquivo php
@@ -40,8 +27,8 @@ $mail->SMTPAuth = true;
 
 // Usuário do servidor SMTP (endereço de email) 
 // obs: Use a mesma senha da sua conta de email 
-$mail->Username = 'xxxxxxxxxxxxxxxxxxxx'; 
-$mail->Password = 'xxxxxxxxxxxxxxxxxxxx'; 
+$mail->Username = 'website@servermail.srv.br'; 
+$mail->Password = 'Agencia321#Alper'; 
 
 // Configurações de compatibilidade para autenticação em TLS 
 $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) ); 
@@ -51,10 +38,10 @@ $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer
 
 // Define o remetente 
 // Seu e-mail 
-$mail->From = "xxxxxxxxxxxxxxxxxxxx"; 
+$mail->From = "website@servermail.srv.br"; 
 
 // Seu nome 
-$mail->FromName = "Patrick Cardoso"; 
+$mail->FromName = "Formulário ALL Car Center"; 
 
 // Define o(s) destinatário(s) 
 $mail->AddAddress('patrick@agenciaalper.com.br', 'Patrick Cardoso'); 
@@ -83,10 +70,7 @@ $body = '<h2 style="font-family: Verdana; color: #444; text-align: center; borde
 
 $body .= '<p style="font-family: Verdana; color: #444; float: left; width: 49%;"><b style="font-family: Verdana; color: #444;">Nome:</b> '.$nome.'</p>';
 $body .= '<p style="font-family: Verdana; color: #444; float: right; width: 49%;"><b style="font-family: Verdana; color: #444;">E-mail:</b> '.$email.'</p>';
-$body .= '<p style="font-family: Verdana; color: #444; float: left; width: 49%;"><b style="font-family: Verdana; color: #444;">Telefone:</b> '.$telefone.'</p>';
-$body .= '<p style="font-family: Verdana; color: #444; float: right; width: 49%;"><b style="font-family: Verdana; color: #444;">Serviços Pretendidos:</b> '.$servicos.'</p>';
-$body .= '<p style="font-family: Verdana; color: #444; float: right; width: 49%;"><b style="font-family: Verdana; color: #444;">Melhor Data: (Ano/mês/dia)</b> '.$data.'</p>';
-$body .= '<p style="font-family: Verdana; color: #444; float: right; width: 49%;"><b style="font-family: Verdana; color: #444;">Melhor Horário:</b> '.$horario.'</p>';
+$body .= '<p style="font-family: Verdana; color: #444; float: right; width: 49%;"><b style="font-family: Verdana; color: #444;">Melhor Horário:</b> '.$assunto.'</p>';
 $body .= '<p style="font-family: Verdana; color: #444; float: left; width: 49%;"><b style="font-family: Verdana; color: #444;">Informações Adicionais:</b> '.$mensagem.'</p>';
 
 
@@ -100,7 +84,7 @@ $mail->Body = "$body";
 if($nome == "" || $telefone == ""){
   echo "<html>
 <head>
-  <title>Mensagem Enviada | Eloana Thomé</title>
+  <title>Mensagem Enviada | ALL Car</title>
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
   <meta charset=\"utf-8\">
   <style type=\"text/css\">
@@ -145,7 +129,7 @@ if($nome == "" || $telefone == ""){
   </div>
   <div class=\"body\">
     <p>Problema com Parâmetros!</p>
-    <a href=\"https://eloanathome.com.br/amp/index.amp.html\">Voltar ao Site</a>
+    <a href=\"https://allcarcenter.com.br/amp/index.amp.html\">Voltar ao Site</a>
   </div>
 </body>
 </html>";
@@ -157,8 +141,8 @@ if($nome == "" || $telefone == ""){
   { 
     echo "<html>
 <head>
-  <title>Mensagem Enviada | Eloana Thomé</title>
-    <meta http-equiv=\"refresh\" content=\"5;https://eloanathome.com.br/amp/index.amp.html\" />
+  <title>Mensagem Enviada | ALL Car</title>
+    <meta http-equiv=\"refresh\" content=\"5;https://allcarcenter.com.br/amp/index.amp.html\" />
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
   <meta charset=\"utf-8\">
   <style type=\"text/css\">
@@ -171,7 +155,7 @@ if($nome == "" || $telefone == ""){
     }
     .header{
       padding: 100px 0;
-      background-color: #016274;
+      background-color: rgba(0,0,0,0.9);
     }
     .header h1{
       font-weight: 300;
@@ -196,7 +180,7 @@ if($nome == "" || $telefone == ""){
       font-size: 18px;
     }
     .body a{
-      background-color: #016274;
+      background-color: #000;
       color: white;
       text-decoration: none;
       padding: 10px 25px;
@@ -207,11 +191,11 @@ if($nome == "" || $telefone == ""){
 <body>
   <div class=\"header\">
     <h1>Mensagem Enviada!</h1>
-    <h2>Dra. Eloana Thome</h2>
+    <h2>ALL Car Center</h2>
   </div>
   <div class=\"body\">
     <p>Obrigado por entrar em contato conosco. Estaremos lhe respondendo assim que possível!</p>
-    <a href=\"https://eloanathome.com.br/amp/index.amp.html\">Voltar ao Site</a>
+    <a href=\"https://allcarcenter.com.br/amp/index.amp.html\">Voltar ao Site</a>
   </div>
 </body>
 </html>";
